@@ -23,6 +23,9 @@ const app = new Vue({
     methods:{
         // metodo "search", cerca risultati nell' API
         search(){
+            /**
+             * FILM
+             */
             axios.get("https://api.themoviedb.org/3/search/movie", {
                 params:{
                     api_key: "e99307154c6dfb0b4750f6603256716d",
@@ -36,6 +39,33 @@ const app = new Vue({
                         const ris = risposta.data.results;
                         // console.log(ris);
                         this.risultati = ris;
+                    })
+                    .catch(errore => {
+                        // gestione caso di errore
+                        console.log(errore);
+                    });
+            
+            /**
+             * SERIE TV
+             */
+
+            axios.get("https://api.themoviedb.org/3/search/tv", {
+                params:{
+                    api_key: "e99307154c6dfb0b4750f6603256716d",
+                    query: this.query,
+                    language: "it-IT"
+
+                }
+            })
+                    .then(risposta => {
+                        // gestione caso di successo
+                        const ris = risposta.data.results;
+                        // console.log(ris);
+                        // mile 1
+                        // this.risultati = ris;
+
+                        // mile 2
+                        this.risultati = this.risultati.concat(ris);
                     })
                     .catch(errore => {
                         // gestione caso di errore

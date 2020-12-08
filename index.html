@@ -32,11 +32,13 @@
                 <ul>
                     <li>
                         <span>Titolo:</span>
-                        <span>{{risultato.title}}</span>
+                        <span v-if="risultato.title">{{risultato.title}}</span>
+                        <span v-if="risultato.name">{{risultato.name}}</span>
                     </li>
                     <li>
                         <span>Titolo Originale:</span>
-                        <span>{{risultato.original_title}}</span>
+                        <span v-if="risultato.original_title">{{risultato.original_title}}</span>
+                        <span v-if="risultato.original_name">{{risultato.original_name}}</span>
                     </li>
                     <li>
                         <span>Voto:</span>
