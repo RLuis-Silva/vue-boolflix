@@ -10,12 +10,58 @@
     <!-- link STYLE CSS-->
     <link rel="stylesheet" href="./style.css">
 
+    <!-- link VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
 
     <title>Hello Vue & API</title>
 </head>
 <body>
     <div id="app">
+        <div class="search">
+            <input type="text" 
+                v-model="query" 
+                placeholder="Cerca un film o una serie TV"
+                @keyup.enter="search"
+            >
+            <button @click="search">Search</button>
+        </div>
 
+        <div class="container-film">
+            <div v-for="risultato in risultati" class="film">
+                <ul>
+                    <li>
+                        <span>Titolo:</span>
+                        <span>{{risultato.title}}</span>
+                    </li>
+                    <li>
+                        <span>Titolo Originale:</span>
+                        <span>{{risultato.original_title}}</span>
+                    </li>
+                    <li>
+                        <span>Voto:</span>
+                        <i v-for="n in getVote(risultato.vote_average)" 
+                            class="fas fa-star">
+                        </i>
+                        <i v-for="n in 5 - getVote(risultato.vote_average)" 
+                            class="far fa-star">
+                        </i>
+                    </li>
+
+                    <li>
+                        <span>Lingua:</span>
+                        <img v-if="isLangFlag(risultato.original_language)" 
+                            class="flag" 
+                            :src="getFlag(risultato.original_language)" 
+                            :alt="risultato.original_language"
+                        >
+                        <span v-else>
+                            {{risultato.original_language}}
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 

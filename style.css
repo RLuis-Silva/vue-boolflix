@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 30px;
+}
+
+.flag{
+    width: 20px;
+}
+
+.movie{
+    margin: 20px 0;
+}
