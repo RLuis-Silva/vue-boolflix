@@ -1,0 +1,35 @@
+Esercizio di oggi (25/11/2020): BoolFlix Milestone 1 e 2
+
+cartella/repo: vue-boolflix
+
+Link documento assegnazione esercizio:
+https://docs.google.com/document/d/16XHLCu_deL2YIqQTpnmdKxBCArKDyOf-o2Xj7lgc8fM/
+
+Ricordate di creare un account qui https://www.themoviedb.org e richiedere l'API key indispensabile per effettuare le chiamate all'API nello svolgimento 
+dell'esercizio.
+In queste prime milestone concentrarvi sulla logica, il layout completo sarà fatto in una successiva milestone.
+Ricordate in oltre che Postman è vostro amico: usatelo ancora prima di scrivere codice per testare endpoint API, api key e analizzare la struttura di 
+dati ritornati dall'API.
+In allegato trovate le immagini delle bandiere per la lingua e a breve sarà disponibile il video di questa mattina.
+Buon lavoro ancora ragazzi e soprattutto buon divertimento!
+Sono sicuro vi toglierete delle belle soddisfazioni! 
+
+CONSIGLIO DI PAOLO:
+@here ragazzi per la creazione dell'API: nel campo 'Application Summary' la validazione richiede + una o due parole, altrimenti vi da errore di validazione.
+Inserite un qualcosa tipo:
+Show list of movie informations
+Buon lavoro ancora cari
+
+
+
+
+
+Esercizio di oggi (25/11/2020): BoolFlix Milestone 3 e 4
+cartella/repo: vue-boolflix
+Link documento assegnazione esercizio:
+https://docs.google.com/document/d/16XHLCu_deL2YIqQTpnmdKxBCArKDyOf-o2Xj7lgc8fM/
+Procediamo con il nostro progetto con la milestome 3 (copertina film o serie) e milestone 4 layout con CSS, come visto all'assegnazione.
+Ricordate di completare da milestone 1 a 4 prima di iniziare con le parti bonus.
+Sotto allego due grafiche di riferimento ma siete liberissimo di personalizzare il layout come desiderate.
+Buon lavoro e buon divertimento ragazzi :muscle: Non vedo l'ora di vedere le vostre creazioni :star-struck:
+Ricordo che poi domattina ci vediamo a lezione come sempre alle 9.30 :slightly_smiling_face:
