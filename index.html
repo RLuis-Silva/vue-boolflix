@@ -18,13 +18,24 @@
 </head>
 <body>
     <div id="app">
-        <div class="search">
-            <input type="text" 
-                v-model="query" 
-                placeholder="Cerca un film o una serie TV"
-                @keyup.enter="search"
-            >
-            <button @click="search">Search</button>
+        <div class="header">
+            <img src="./img/logo.jpg" alt="">
+            <!-- <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">SerieTV</a></li>
+                    <li><a href="">Film</a></li>
+                    <li><a href="">Aggiunti di recente</a></li>
+                </ul>
+            </nav> -->
+            <div class="search">
+                <input type="text" 
+                    v-model="query" 
+                    placeholder="Cerca un titolo"
+                    @keyup.enter="search"
+                >
+                <button @click="search">Search</button>
+            </div>
         </div>
 
         <div class="container-film">

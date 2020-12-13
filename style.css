@@ -5,16 +5,64 @@
 }
 
 body{
-    background-color: #252326;
+    background-color: #2d2d2d;
     color: white;
 }
 
 
-#app{
-    padding: 60px;
-    padding-top: 40px;
+
+
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #212121;
+    padding: 20px;
 }
 
+.header img{
+    width: 150px;
+}
+
+/* header/nav */
+nav ul{
+    display: flex;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+/* ul li:hover{
+    background-color: red;
+    padding: 3px;
+} */
+
+/* header/search */
+.search{
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.search input{
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.search button{
+    height: 35px;
+    width: 60px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+/* container film */
 .flag{
     background-size: cover;
     width: 30px;
@@ -25,13 +73,15 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 60px;
 }
 
 .film{
     margin: 20px 10px;
-    background-color: #00183a;
+    background-color: #212121;
     padding: 20px;
     flex-basis: 360px;
+    cursor: pointer;
 }
 
 .film .poster{
