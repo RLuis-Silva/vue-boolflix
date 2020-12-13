@@ -5,13 +5,43 @@
 }
 
 body{
-    padding: 30px;
+    background-color: #252326;
+    color: white;
+}
+
+
+#app{
+    padding: 60px;
+    padding-top: 40px;
 }
 
 .flag{
-    width: 20px;
+    background-size: cover;
+    width: 30px;
+}
+
+
+.container-film{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .film{
-    margin: 20px 0;
+    margin: 20px 10px;
+    background-color: #00183a;
+    padding: 20px;
+    flex-basis: 360px;
+}
+
+.film .poster{
+    width: 320px;
+}
+
+ul{
+    margin-top: 20px;
+    list-style-type: none;
+}
+ul li{
+    margin-bottom: 8px;
 }

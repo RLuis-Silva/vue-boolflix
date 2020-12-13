@@ -35,11 +35,15 @@
                 > -->
 
                 <!-- se img è disponibile, mostra img dell' oggetto [con utilizzo di metodo] (2 modo)-->
-                <img v-if="risultato.poster_path"     
+                <img  v-if="risultato.poster_path"     
                     :src="getPoster(risultato.poster_path)"
+                    class="poster"
                 >
                 <!-- altrimenti, img non è disponibile verrà mostrata l'img "placeholder" -->
-                <img v-else src="https://www.altavod.com/assets/images/poster-placeholder.png">
+                <img v-else 
+                    src="https://www.altavod.com/assets/images/poster-placeholder.png"
+                    class="poster"    
+                >
                 <ul>
                     <li>
                         <span>Titolo:</span>
