@@ -29,6 +29,17 @@
 
         <div class="container-film">
             <div v-for="risultato in risultati" class="film">
+                <!-- se img è disponibile, mostra l'img dell' oggetto (1 modo)-->
+                <!-- <img v-if="risultato.poster_path"
+                    :src="` https://image.tmdb.org/t/p/w342${risultato.poster_path}` "
+                > -->
+
+                <!-- se img è disponibile, mostra img dell' oggetto [con utilizzo di metodo] (2 modo)-->
+                <img v-if="risultato.poster_path"     
+                    :src="getPoster(risultato.poster_path)"
+                >
+                <!-- altrimenti, img non è disponibile verrà mostrata l'img "placeholder" -->
+                <img v-else src="https://www.altavod.com/assets/images/poster-placeholder.png">
                 <ul>
                     <li>
                         <span>Titolo:</span>

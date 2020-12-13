@@ -87,6 +87,11 @@ const app = new Vue({
         // prende l'immagine della bandiera
         getFlag(language){
             return `./img/${language}.png` 
+        },
+
+        // restituisce img Poster Film/SerieTV
+        getPoster(poster){
+            return `https://image.tmdb.org/t/p/w342${poster}`;
         }
     }
 });
